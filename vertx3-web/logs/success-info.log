@@ -1,0 +1,110 @@
+2022-02-03 21:56:14.329 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 21:56:14.423 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.423 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.423 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.423 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.425 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.425 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.425 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.426 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:14.427 WARN  com.abvertx.web.VertHttpServer.lambda$0() 33 - 服务端部署成功----
+2022-02-03 21:56:33.899 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 21:56:33.995 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:33.995 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:33.995 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:33.996 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:33.996 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:33.997 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:33.997 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:56:33.998 WARN  com.abvertx.web.VertHttpServer.lambda$0() 33 - 服务端部署成功----
+2022-02-03 21:56:33.998 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8888
+2022-02-03 21:57:03.262 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 21:57:03.338 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.338 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.338 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.339 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.340 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.340 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.338 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.343 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 64 - HTTP server started on port 8080
+2022-02-03 21:57:03.344 WARN  com.abvertx.web.VertHttpServer.lambda$0() 33 - 服务端部署成功----
+2022-02-03 22:23:11.281 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:23:11.415 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.415 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.415 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.416 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.416 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.415 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.416 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.417 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:23:11.417 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----
+2022-02-03 22:29:54.869 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:29:54.976 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:29:54.976 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:29:54.977 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:29:54.977 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:29:54.978 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:29:54.978 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:29:54.978 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:29:54.980 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----
+2022-02-03 22:29:54.980 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:45.867 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:31:46.019 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:46.019 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:46.019 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:46.021 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:46.023 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:46.020 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:46.026 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:31:46.028 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----
+2022-02-03 22:31:46.028 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.572 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:35:41.645 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.645 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.645 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.645 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.646 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.648 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.650 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:35:41.651 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----
+2022-02-03 22:35:41.651 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.248 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:36:06.464 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.464 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.464 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.465 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.466 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.468 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.468 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:36:06.470 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----
+2022-02-03 22:36:06.470 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.045 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:40:03.301 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.301 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.301 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.301 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.301 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.302 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.309 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:40:03.310 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----
+2022-02-03 22:40:03.310 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.350 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:41:39.513 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.513 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.513 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.513 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.514 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.513 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.513 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.516 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 79 - HTTP server started on port 8080
+2022-02-03 22:41:39.516 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----
+2022-02-03 22:43:53.820 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+2022-02-03 22:43:53.910 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.910 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.910 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.911 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.913 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.915 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.911 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.916 INFO  com.abvertx.web.verticle.MainVerticle.lambda$2() 82 - HTTP server started on port 8080
+2022-02-03 22:43:53.917 WARN  com.abvertx.web.VertHttpServer.lambda$0() 36 - 服务端部署成功----

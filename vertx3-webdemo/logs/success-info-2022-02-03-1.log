@@ -1,0 +1,1 @@
+2022-02-03 23:40:01.916 WARN  io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>() 70 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.

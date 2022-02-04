@@ -81,7 +81,7 @@ public class UserResource extends BaseResource {
 		routingContext.vertx().executeBlocking(future ->
 		{
 			//query data from DB
-			List<Integer> rr = new ArrayList<>();
+			
 			MySQLPool client = new JdbcUtils(routingContext.vertx()).getClient();
 			client.getConnection( res -> {
 				if(res.succeeded()) {
@@ -89,15 +89,22 @@ public class UserResource extends BaseResource {
 					conn.query("select * from t_user").execute(result -> {
 						conn.close();
 						if(result.succeeded()) {
+							List<UserEntity> lists = new ArrayList<>();
 							result.result().forEach(item -> {
-								rr.add(Integer.parseInt(item.getValue("id").toString()));
+								UserEntity u = new UserEntity();
+								u.setId(Integer.parseInt(item.getValue("id").toString()));
+								u.setName(item.getValue("name").toString());
+								lists.add(u);
 							});
+							future.complete(lists);
+						}else {
+							future.complete();
 						}
-						future.complete(rr);
+						
 					});
 					
 				}else {
-					System.out.println("xxx");
+					future.complete();
 				}
 			});
 			//sendResponseData(routingContext, JsonUtils.objectToJson(rr));

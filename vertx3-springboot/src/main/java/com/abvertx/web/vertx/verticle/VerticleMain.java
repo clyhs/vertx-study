@@ -39,7 +39,7 @@ public class VerticleMain extends AbstractVerticle {
      * Controller 所在的包
      */
     private final String controllerBasePackage[] = {
-            "io.javac.vertx.vertxdemo.controller"
+            "com.abvertx.web.controller"
     };
 
 

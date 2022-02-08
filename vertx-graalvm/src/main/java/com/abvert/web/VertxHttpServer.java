@@ -4,21 +4,15 @@
 package com.abvert.web;
 
 
-import java.io.File;
-import java.util.concurrent.TimeUnit;
-
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.abvert.web.verticle.MainVerticle;
 
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
-import io.vertx.core.http.HttpServer;
-import io.vertx.core.http.HttpServerOptions;
+import io.vertx.core.logging.LoggerFactory;
 import io.vertx.core.logging.SLF4JLogDelegateFactory;
-import io.vertx.ext.web.Router;
 /**
  * @date Feb 5, 2022 8:24:41 PM
  *
@@ -27,12 +21,12 @@ import io.vertx.ext.web.Router;
  */
 public class VertxHttpServer {
 
-	private static final Logger logger = LoggerFactory.getLogger(VertxHttpServer.class);
+	private static final Logger logger = org.slf4j.LoggerFactory.getLogger(VertxHttpServer.class);
 
     public static void main(String[] args){
-    	//File logbackFile = new File("config", "logback.xml");
+    	//File logbackFile = new File("src/main/resources", "logback.xml");
 		//System.setProperty("logback.configurationFile", logbackFile.getAbsolutePath());
-		//System.setProperty(LoggerFactory.LOGGER_DELEGATE_FACTORY_CLASS_NAME, SLF4JLogDelegateFactory.class.getName());
+		System.setProperty(LoggerFactory.LOGGER_DELEGATE_FACTORY_CLASS_NAME, SLF4JLogDelegateFactory.class.getName());
 		//Logger logger = LoggerFactory.getLogger(VertxHttpServer.class);
         VertxOptions vertxOptions = new VertxOptions();
         Vertx vertx = Vertx.vertx(vertxOptions);

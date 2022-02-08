@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<vertx.version>4.1.0</vertx.version>
+		<vertx.version>4.0.3</vertx.version>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
@@ -53,15 +53,16 @@
 			<artifactId>log4j-core</artifactId> <version>2.14.1</version> </dependency> 
 			<dependency> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j-slf4j-impl</artifactId> 
 			<version>2.14.1</version> </dependency> -->
+        <!--  -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.2.3</version>
+			<version>1.2.10</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>log4j-over-slf4j</artifactId>
-			<version>1.7.30</version>
+			<version>1.7.32</version>
 		</dependency>
 
 	</dependencies>
@@ -116,11 +117,14 @@
 					<source>11</source>
 					<target>11</target>
 					<showWarnings>true</showWarnings>
-		            <showDeprecation>false</showDeprecation>
-		            <useIncrementalCompilation>false</useIncrementalCompilation>
+					<showDeprecation>false</showDeprecation>
+					<useIncrementalCompilation>false</useIncrementalCompilation>
 					<compilerArgs>
-					    <arg>--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED</arg>
-					    <arg>--add-exports=java.base/jdk.internal.misc.Unsafe=ALL-UNNAMED</arg>        
+
+						<compilerArg>
+							--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED
+						</compilerArg>
+						<compilerArg>--add-exports=java.base/jdk.internal.misc.Unsafe=ALL-UNNAMED</compilerArg>
 					</compilerArgs>
 				</configuration>
 			</plugin>
@@ -151,7 +155,7 @@
 					<plugin>
 						<groupId>org.graalvm.nativeimage</groupId>
 						<artifactId>native-image-maven-plugin</artifactId>
-						<version>19.3.2</version>
+						<version>21.0.0</version>
 						<executions>
 							<execution>
 								<goals>
@@ -169,6 +173,7 @@
 								--initialize-at-build-time=ch.qos.logback
 								--initialize-at-build-time=org.apache.logging.log4j
 								-Dio.netty.tryReflectionSetAccessible=true
+
 							</buildArgs>
 						</configuration>
 					</plugin>

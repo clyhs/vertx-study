@@ -24,6 +24,11 @@
 			<artifactId>vertx-web</artifactId>
 			<version>${vertx.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-core</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
 		<!-- <dependency> <groupId>ch.qos.logback</groupId> <artifactId>logback-classic</artifactId> 
 			<version>1.1.2</version> </dependency> <dependency> <groupId>org.slf4j</groupId> 
 			<artifactId>log4j-over-slf4j</artifactId> <version>1.7.25</version> </dependency> -->
@@ -53,7 +58,7 @@
 			<artifactId>log4j-core</artifactId> <version>2.14.1</version> </dependency> 
 			<dependency> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j-slf4j-impl</artifactId> 
 			<version>2.14.1</version> </dependency> -->
-        <!--  -->
+		<!-- -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
@@ -63,6 +68,35 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>log4j-over-slf4j</artifactId>
 			<version>1.7.32</version>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-mysql-client</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.11.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>io.netty</groupId>
+			<artifactId>netty-resolver-dns-native-macos</artifactId>
+			<version>4.1.60.Final</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.60.Final</version>
 		</dependency>
 
 	</dependencies>
@@ -120,11 +154,12 @@
 					<showDeprecation>false</showDeprecation>
 					<useIncrementalCompilation>false</useIncrementalCompilation>
 					<compilerArgs>
-
 						<compilerArg>
 							--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED
 						</compilerArg>
-						<compilerArg>--add-exports=java.base/jdk.internal.misc.Unsafe=ALL-UNNAMED</compilerArg>
+						<compilerArg>
+							--add-exports=java.base/jdk.internal.misc.Unsafe=ALL-UNNAMED
+						</compilerArg>
 					</compilerArgs>
 				</configuration>
 			</plugin>
@@ -155,7 +190,7 @@
 					<plugin>
 						<groupId>org.graalvm.nativeimage</groupId>
 						<artifactId>native-image-maven-plugin</artifactId>
-						<version>21.0.0</version>
+						<version>20.1.0</version>
 						<executions>
 							<execution>
 								<goals>
@@ -172,8 +207,12 @@
 								--initialize-at-build-time=org.apache.logging.slf4j
 								--initialize-at-build-time=ch.qos.logback
 								--initialize-at-build-time=org.apache.logging.log4j
+								--initialize-at-build-time=com.sun.org.apache.xerces.internal
+								--initialize-at-build-time=javax
+								--initialize-at-build-time=jdk.xml
+								--initialize-at-build-time=io.netty
 								-Dio.netty.tryReflectionSetAccessible=true
-
+								--trace-class-initialization=io.netty.util.AbstractReferenceCounted
 							</buildArgs>
 						</configuration>
 					</plugin>

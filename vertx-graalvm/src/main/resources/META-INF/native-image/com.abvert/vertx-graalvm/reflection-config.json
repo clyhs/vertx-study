@@ -901,7 +901,7 @@
 		]
 	},
 	{
-		"name": "io.vertx.core.net.impl.HAProxyMessageCompletionHandler",
+		"name": "io.vertx.core.http.impl.HttpServerWorker$1",
 		"methods": [
 			{
 				"name": "userEventTriggered",

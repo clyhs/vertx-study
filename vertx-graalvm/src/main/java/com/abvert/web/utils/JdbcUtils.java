@@ -21,15 +21,16 @@ public class JdbcUtils {
 	public JdbcUtils(Vertx vertx) {
 		MySQLConnectOptions connectOptions = new MySQLConnectOptions()
 			    .setPort(3306)
-			    .setHost("192.168.2.221")
+			    .setHost("127.0.0.1")
 			    .setDatabase("vertxdemo")
 			    .setUser("root")
-			    .setPassword("tiancom")
+			    .setPassword("123456")
 			    .setCharset("utf8");
 		PoolOptions poolOptions = new PoolOptions()
 			    .setMaxSize(5);
 		
 		client = MySQLPool.pool(vertx, connectOptions, poolOptions);
+		
 	}
 
 	/**

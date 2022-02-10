@@ -26,6 +26,10 @@ import io.vertx.sqlclient.*;
  *
  */
 public class UserResource extends BaseResource {
+	
+	public UserResource(MySQLPool client){
+		this.client = client;
+	}
 
 	/*
 	 * (non-Javadoc)
@@ -37,6 +41,7 @@ public class UserResource extends BaseResource {
 	public void registerResource(Router router) {
 		// TODO Auto-generated method stub
 		router.get(VERSION + "/users").handler(this::queryAllResource).failureHandler(this::failedHandler);
+		router.get(VERSION + "/user/:id").handler(this::queryById).failureHandler(this::failedHandler);
 	}
 
 	private void queryAllResource(RoutingContext routingContext) {
@@ -94,5 +99,25 @@ public class UserResource extends BaseResource {
 			sendResponseData(routingContext, JsonUtils.objectToJson(asyncResult.result()));
 		});
 	}
+	
+	private void queryById(RoutingContext routingContext) {
+		Integer id = Integer.valueOf(routingContext.request().getParam("id").toString());
+		JsonObject obj = new JsonObject();
+		obj.put("id", id);
+		routingContext.vertx().executeBlocking(future -> {
+			routingContext.vertx().eventBus().request("user:findById", obj).onComplete(res -> {
+				JsonObject o = (JsonObject) res.result().body();
+				future.complete(o);
+				
+			});
+		}, false, asyncResult -> {
+			if (asyncResult.failed()) {
+				routingContext.fail(asyncResult.cause());
+				return;
+			}
+			sendResponseData(routingContext, JsonUtils.objectToJson(asyncResult.result()));
+		});
+	}
+	
 
 }

@@ -21,9 +21,7 @@ import io.vertx.sqlclient.RowSet;
 import io.vertx.sqlclient.SqlConnection;
 import io.vertx.sqlclient.Tuple;
 
-public abstract class BaseResource {
-	
-	protected final Logger logger = LoggerFactory.getLogger(getClass());
+public abstract class BaseResource extends BaseDao{
 
 	public final String VERSION = "/v1.0";
 	
@@ -90,35 +88,6 @@ public abstract class BaseResource {
 		}
 	}
 	
-	protected Future<SqlConnection> getConn(RoutingContext routingContext) {
-		MySQLPool client = new JdbcUtils(routingContext.vertx()).getClient();
-		Promise<SqlConnection> promise = Promise.promise();
-		client.getConnection(ar1 -> {
-			if (ar1.succeeded()) {
-				logger.info("Connected");
-				// Obtain our connection
-				SqlConnection conn = ar1.result();
-				promise.complete(conn);
-			} else {
-				promise.fail(ar1.cause());
-			}
-		});
-		return promise.future();
-	}
-
-	// 第二步 用获取到的链接查询数据库
-	protected Future<RowSet<Row>> getRows(SqlConnection conn, String sql,Integer page, Integer size) {
-		Promise<RowSet<Row>> promise = Promise.promise();
-		conn.preparedQuery(sql).execute(Tuple.of(page, size), ar2 -> {
-			// Release the connection to the pool
-			conn.close();
-			if (ar2.succeeded()) {
-				promise.complete(ar2.result());
-			} else {
-				promise.fail(ar2.cause());
-			}
-		});
-		return promise.future();
-	}
+	
 	
 }

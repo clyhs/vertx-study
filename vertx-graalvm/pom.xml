@@ -34,12 +34,12 @@
 			<artifactId>log4j-over-slf4j</artifactId> <version>1.7.25</version> </dependency> -->
 		<!-- Add tcnative to avoid error during native image generation: Caused 
 			by: java.lang.NoClassDefFoundError: io/netty/handler/ssl/ReferenceCountedOpenSslServerContext$OpenSslSniHostnameMatcher -->
-		<!-- -->
+		<!-- osx-,windows-->
 		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty-tcnative</artifactId>
 			<version>2.0.8.Final</version>
-			<classifier>windows-x86_64</classifier>
+			<classifier>osx-x86_64</classifier>
 		</dependency>
 		<dependency>
 			<groupId>com.jcraft</groupId>
@@ -212,7 +212,6 @@
 								--initialize-at-build-time=jdk.xml
 								--initialize-at-build-time=io.netty
 								-Dio.netty.tryReflectionSetAccessible=true
-								--trace-class-initialization=io.netty.util.AbstractReferenceCounted
 							</buildArgs>
 						</configuration>
 					</plugin>

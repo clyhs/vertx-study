@@ -12,10 +12,12 @@ import com.abvert.web.utils.JdbcUtils;
 import com.abvert.web.utils.JsonUtils;
 
 import io.vertx.core.Future;
+import io.vertx.core.json.JsonArray;
+import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.mysqlclient.MySQLPool;
-import io.vertx.sqlclient.SqlConnection;
+import io.vertx.sqlclient.*;
 
 /**
  * @date Feb 9, 2022 7:24:56 PM
@@ -41,7 +43,7 @@ public class UserResource extends BaseResource {
 
 		routingContext.vertx().executeBlocking(future -> {
 			// query data from DB
-
+            /*
 			MySQLPool client = new JdbcUtils(routingContext.vertx()).getClient();
 			client.getConnection(res -> {
 				if (res.succeeded()) {
@@ -67,6 +69,21 @@ public class UserResource extends BaseResource {
 				} else {
 					future.complete();
 				}
+			});*/
+			List<JsonObject> lists = new ArrayList<>();
+            this.getConn(routingContext).compose(conn -> this.getRows(conn,"select * from t_user limit ?, ?",0,5)).onComplete(rowSetAsyncResult -> {
+				RowSet<Row> rows =rowSetAsyncResult.result();
+				rows.forEach(item -> {
+					logger.debug("item:{}",item.getValue("id").toString());
+					JsonObject u = new JsonObject();
+					//u.setId(Integer.parseInt(item.getValue("id").toString()));
+					//u.setName(item.getValue("name").toString());
+					u.put("id",Integer.parseInt(item.getValue("id").toString()));
+					u.put("name",item.getValue("name").toString());
+					lists.add(u);
+				});
+				future.complete(lists);
+
 			});
 
 		}, false, asyncResult -> {
